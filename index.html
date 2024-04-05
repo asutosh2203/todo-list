@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="todo-list">
+      <div id="input-container">
+        <i class="fa-solid fa-list-check"></i>
+        <input
+          type="text"
+          placeholder="What Needs to Be Done?"
+          id="task-input"
+        />
+        <button id="add-task">
+          <i class="fa-solid fa-circle-plus"></i>
+        </button>
+      </div>
+      <div id="header">
+        <p id="complete-all">
+          <i class="fa-regular fa-circle-check"></i>Complete All Tasks
+        </p>
+        <p id="clear-completed"><i class="fa-solid fa-broom"></i>Clear Completed</p>
+      </div>
+      <hr />
+      <div id="pending-tasks">
+        <!-- <div class="pending-task">
+          <input type="checkbox" name="" id="" />
+          <p>Do laundry</p>
+          <button>
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div> -->
+      </div>
+      <hr />
+      <div id="footer">
+        <p><span id="task-count">0</span> tasks</p>
+        <div id="task-filters">
+          <div class="option-container">
+            <input type="radio" name="options" id="all" value="all" checked />
+            <label for="all">All</label>
+          </div>
+          <div class="option-container">
+            <input
+              type="radio"
+              name="options"
+              id="completed"
+              value="completed"
+            />
+            <label for="completed">Completed</label>
+          </div>
+          <div class="option-container">
+            <input
+              type="radio"
+              name="options"
+              id="incomplete"
+              value="incomplete"
+            />
+            <label for="incomplete">Incomplete</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
